@@ -8,7 +8,6 @@ const create = catchError(async (req, res) => {
     to: 'oscarzambranozam@gmail.com', // Cambia esto al correo al que deseas enviar la información del formulario
     subject: "Nuevo mensaje desde el portafolio",
     text: `Nombre: ${req.body.nombre}
-    \nEmpresa: ${req.body.empresa}
     \nEmail: ${req.body.email}
     \nMensaje: ${req.body.mensaje}`,
   };
@@ -23,5 +22,5 @@ const create = catchError(async (req, res) => {
 });
 
 module.exports = {
-  create
+  create,
 }
